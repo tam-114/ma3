@@ -1,0 +1,87 @@
+/*formats the grid item*/
+    .grid-item {
+      background-color: $bgcolorblack;
+      border: 1px solid $colorgold;
+      //margin: 10px;
+    }
+
+//grid-item configurations
+//Square occupying 1 row and 2 col
+.item-One {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  margin: 5px;
+  }
+
+  //square occupying col 1 and row 2
+  .item-Two {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 5px;
+    padding: 20px;
+
+  }
+  //square occupying col 2 and row 2
+  .item-Three {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 5px;
+    padding: 20px;
+  }
+
+  //square occupying col 1 and row 3
+  .item-Four {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 5px;
+    padding: 20px;
+
+  }
+
+  //square occupying col 2 and row 3
+  .item-Five {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 5px;
+    padding: 20px;
+  }
+
+  //square occupying col 1 and row 4
+  .item-Six {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 5px;
+    padding: 20px;
+  }
+
+  /*square occupying col 2 and row 4*/
+  .item-Seven {
+    grid-column: 2;
+    grid-row: 4;
+    margin: 5px;
+    padding: 20px;
+  }
+
+  //square occupying col 1 and row 5
+  .item-Eight {
+    grid-column: 1;
+    grid-row: 5;
+    margin: 5px;
+    padding: 20px;
+  }
+
+   //square occupying col 2 and row 5
+  .item-Nine {
+    grid-column: 2;
+    grid-row: 5;
+    margin: 5px;
+    padding: 20px;
+
+  }
+
+   //square occupying col 1 and row 6
+  .item-Ten {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+    margin: 5px;
+  }

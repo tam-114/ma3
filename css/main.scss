@@ -1,0 +1,14 @@
+//links to import variables & mixins files to main.scss
+@import "variables";
+@import "mixins";
+@import "_griditem.scss";
+
+
+/*these comments show up, double slash doesnt*/
+//includes the mixin for grid format
+@include grid;
+
+/*includes the mixin for image changes*/
+//fix image & grid layouts to change width screen adjustments
+@include widthChanges;
+@include webColors;

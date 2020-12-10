@@ -1,0 +1,125 @@
+body {
+  font-family: Georgia, sans-serif; }
+
+p {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffe6;
+  font-family: Verdana; }
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  color: #ffffe6; }
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #ffcc00; }
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  color: #ff0000; }
+
+h4 {
+  font-size: 30px;
+  text-align: center;
+  color: #ff471a; }
+
+img {
+  width: 600px;
+  height: 600px;
+  border: 2px solid #ff0000; }
+
+/*formats the grid item*/
+.grid-item {
+  background-color: #0d0d0d;
+  border: 1px solid #ffcc00; }
+
+.item-One {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  margin: 5px; }
+
+.item-Two {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 5px;
+  padding: 20px; }
+
+.item-Three {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 5px;
+  padding: 20px; }
+
+.item-Four {
+  grid-column: 1;
+  grid-row: 3;
+  margin: 5px;
+  padding: 20px; }
+
+.item-Five {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 5px;
+  padding: 20px; }
+
+.item-Six {
+  grid-column: 1;
+  grid-row: 4;
+  margin: 5px;
+  padding: 20px; }
+
+/*square occupying col 2 and row 4*/
+.item-Seven {
+  grid-column: 2;
+  grid-row: 4;
+  margin: 5px;
+  padding: 20px; }
+
+.item-Eight {
+  grid-column: 1;
+  grid-row: 5;
+  margin: 5px;
+  padding: 20px; }
+
+.item-Nine {
+  grid-column: 2;
+  grid-row: 5;
+  margin: 5px;
+  padding: 20px; }
+
+.item-Ten {
+  grid-column: 1 / span 2;
+  grid-row: 6;
+  margin: 5px; }
+
+/*these comments show up, double slash doesnt*/
+@media screen and (min-width: 899px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #ff0000;
+    background-image: url("../img/gray_bg.jpg"); } }
+@media screen and (min-width: 900px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #d9d9d9;
+    background-image: url("../img/gray_bg.jpg");
+    /*creates more of a space/gap between grid-items*/
+    grid-column-gap: 15px;
+    grid-row-gap: 15px; } }
+/*includes the mixin for image changes*/
+.imgChange {
+  width: 600px; }
+
+.hWebColor {
+  color: #ffffe6; }
+
+.pWebColor {
+  color: #ffcc00; }
+
+/*# sourceMappingURL=main.css.map */
