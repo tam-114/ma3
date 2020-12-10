@@ -1,16 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
 body {
-  font-family: Georgia, sans-serif; }
+  font-family: "Roboto Slab", sans-serif;
+  background-image: url("../img/bg_paper.jpg"); }
 
 p {
   font-size: 20px;
   text-align: center;
-  color: #ffffe6;
-  font-family: Verdana; }
+  color: #0d0d0d;
+  font-family: "Raleway", sans-serif; }
 
 h1 {
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
-  color: #ffffe6; }
+  font-family: "Abril Fatface", sans-serif;
+  color: #0d0d0d; }
 
 h2 {
   font-size: 30px;
@@ -32,9 +37,7 @@ img {
   height: 600px;
   border: 2px solid #ff0000; }
 
-/*formats the grid item*/
 .grid-item {
-  background-color: #0d0d0d;
   border: 1px solid #ffcc00; }
 
 .item-One {
@@ -72,7 +75,6 @@ img {
   margin: 5px;
   padding: 20px; }
 
-/*square occupying col 2 and row 4*/
 .item-Seven {
   grid-column: 2;
   grid-row: 4;
@@ -96,30 +98,84 @@ img {
   grid-row: 6;
   margin: 5px; }
 
-/*these comments show up, double slash doesnt*/
-@media screen and (min-width: 899px) {
+@media screen and (max-width: 900px) {
   .grid {
     display: grid;
     grid-template-columns: auto;
-    background-color: #ff0000;
-    background-image: url("../img/gray_bg.jpg"); } }
+    background-image: url("../img/bg_paper.jpg"); }
+    .grid .item-One {
+      grid-column: 1;
+      grid-row: 1; }
+    .grid .item-Two {
+      grid-column: 1;
+      grid-row: 2; }
+    .grid .item-Three {
+      grid-column: 1;
+      grid-row: 3; }
+    .grid .item-Four {
+      grid-column: 1;
+      grid-row: 5; }
+    .grid .item-Five {
+      grid-column: 1;
+      grid-row: 4; }
+    .grid .item-Six {
+      grid-column: 1;
+      grid-row: 6; }
+    .grid .item-Seven {
+      grid-column: 1;
+      grid-row: 7; }
+    .grid .item-Eight {
+      grid-column: 1;
+      grid-row: 9; }
+    .grid .item-Nine {
+      grid-column: 1;
+      grid-row: 8; }
+    .grid .item-Ten {
+      grid-column: 1;
+      grid-row: 10; } }
 @media screen and (min-width: 900px) {
   .grid {
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #d9d9d9;
-    background-image: url("../img/gray_bg.jpg");
-    /*creates more of a space/gap between grid-items*/
+    background-image: url("../img/bg_paper.jpg");
     grid-column-gap: 15px;
     grid-row-gap: 15px; } }
-/*includes the mixin for image changes*/
+@media screen and (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-image: url("../img/bg_paper.jpg"); }
+    .grid .item-One {
+      grid-column: 1;
+      grid-row: 1; }
+    .grid .item-Two {
+      grid-column: 1;
+      grid-row: 2; }
+    .grid .item-Three {
+      grid-column: 1;
+      grid-row: 3; }
+    .grid .item-Four {
+      grid-column: 1;
+      grid-row: 5; }
+    .grid .item-Five {
+      grid-column: 1;
+      grid-row: 4; }
+    .grid .item-Six {
+      grid-column: 1;
+      grid-row: 6; }
+    .grid .item-Seven {
+      grid-column: 1;
+      grid-row: 7; }
+    .grid .item-Eight {
+      grid-column: 1;
+      grid-row: 9; }
+    .grid .item-Nine {
+      grid-column: 1;
+      grid-row: 8; }
+    .grid .item-Ten {
+      grid-column: 1;
+      grid-row: 10; } }
 .imgChange {
   width: 600px; }
-
-.hWebColor {
-  color: #ffffe6; }
-
-.pWebColor {
-  color: #ffcc00; }
 
 /*# sourceMappingURL=main.css.map */

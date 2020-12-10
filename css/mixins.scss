@@ -1,13 +1,62 @@
 //grid mixin
 @mixin grid {
   //media query for grid
-  //min width $screenmax: 899px;
-  @media screen and (min-width: $screenmax){
+  //min width $screenmin: 900px;
+  @media screen and (max-width: $screenmin){
     .grid {
       display: grid;
       grid-template-columns: auto;
-      background-color: $colorred;
-      background-image: url("../img/gray_bg.jpg");
+      background-image: url("../img/bg_paper.jpg");
+
+      .item-One {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .item-Two {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .item-Three {
+        grid-column: 1;
+        grid-row: 3;
+      }
+
+      .item-Four {
+        grid-column: 1;
+        grid-row: 5;
+      }
+
+      .item-Five {
+        grid-column: 1;
+        grid-row: 4;
+      }
+
+      .item-Six {
+        grid-column: 1;
+        grid-row: 6;
+      }
+
+      .item-Seven {
+        grid-column: 1;
+        grid-row: 7;
+      }
+
+      .item-Eight {
+        grid-column: 1;
+        grid-row: 9;
+      }
+
+      .item-Nine {
+        grid-column: 1;
+        grid-row: 8;
+      }
+
+      .item-Ten {
+        grid-column: 1;
+        grid-row: 10;
+      }
 
     }
   }
@@ -16,46 +65,102 @@
     .grid {
       display: grid;
       grid-template-columns: auto auto;
-      background-color: $bgcolorgray;
-      background-image: url("../img/gray_bg.jpg");
+      background-image: url("../img/bg_paper.jpg");
 
-      /*creates more of a space/gap between grid-items*/
+      //creates more of a space/gap between grid-items
       grid-column-gap: 15px;
       grid-row-gap: 15px;
+
       }
   }
-  //@media screen and (min-width: $screenmini) {
-     // .grid {
-      //display: grid;
-      //grid-template-columns: auto;
-      //background-color: $colorred;
-    //}
-  //}
+  //max width $screenmini: 500px
+  @media screen and (max-width: $screenmini) {
+    .grid {
+      display: grid;
+      grid-template-columns: auto;
+      background-image: url("../img/bg_paper.jpg");
+
+      .item-One {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .item-Two {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .item-Three {
+        grid-column: 1;
+        grid-row: 3;
+      }
+
+      .item-Four {
+        grid-column: 1;
+        grid-row: 5;
+      }
+
+      .item-Five {
+        grid-column: 1;
+        grid-row: 4;
+      }
+
+      .item-Six {
+        grid-column: 1;
+        grid-row: 6;
+      }
+
+      .item-Seven {
+        grid-column: 1;
+        grid-row: 7;
+      }
+
+      .item-Eight {
+        grid-column: 1;
+        grid-row: 9;
+      }
+
+      .item-Nine {
+        grid-column: 1;
+        grid-row: 8;
+      }
+
+      .item-Ten {
+        grid-column: 1;
+        grid-row: 10;
+      }
+
+    }
+  }
 }
 
-//font choice: Georgia, sans-serif
+
 body {
-    font-family: $georgia;
+    font-family: $roboto; //font choice: google font Roboto Slab
+    background-image: url("../img/bg_paper.jpg");
 
 }
 
 p {
   font-size: $pfontsize; //$pfontsize: 20px;
   text-align: $center; //$center: center
-  color: $colorwhite; //color white #ffffe6
-  font-family: $verdana; //font choice: verdana
+  //color: $colorwhite; color white #ffffe6
+  color: $colorblack; //#0d0d0d; black
+  //font-family: $verdana; font choice: verdana
+  font-family: $raleway; //google font 'Raleway', sans-serif;
 }
   
 
 h1 {
   font-size: $hOnefontsize; //$hOnefontsize: 35px;
   text-align: $center;
-  color: $colorwhite;
-  
+  font-family: $abril;
+  color: $colorblack;
+
 }
 
 h2 {
-  font-size: $hTwofontsize; //$hTwofontsize: 30px;
+  font-size: $hTwofontsize; //$hTwofontsize: 40px;
   text-align: $center;
   color: $colorgold; //color gold #ffcc00
   
@@ -75,18 +180,10 @@ h4 {
 
 }
 
-@mixin webColors {
-    .hWebColor {
-    color: $colorwhite;
-  }
-  .pWebColor {
-    color: $colorgold;
-  }
-}
 
 img {
-  width: $width; //$width: 700px;
-  height: $height; //$height: 700px;
+  width: $width; //$width: 600px;
+  height: $height; //$height: 600px;
   border: 2px solid $colorred;
 }
 

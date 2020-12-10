@@ -3,12 +3,14 @@
 @import "mixins";
 @import "_griditem.scss";
 
+//link to font
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
-/*these comments show up, double slash doesnt*/
+
 //includes the mixin for grid format
 @include grid;
 
-/*includes the mixin for image changes*/
-//fix image & grid layouts to change width screen adjustments
+//includes the mixin for image changes
 @include widthChanges;
-@include webColors;

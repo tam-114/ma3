@@ -1,6 +1,6 @@
-/*formats the grid item*/
+//formats the grid item
     .grid-item {
-      background-color: $bgcolorblack;
+      //background-color: $bgcolorblack;
       border: 1px solid $colorgold;
       //margin: 10px;
     }
@@ -54,7 +54,7 @@
     padding: 20px;
   }
 
-  /*square occupying col 2 and row 4*/
+  //square occupying col 2 and row 4
   .item-Seven {
     grid-column: 2;
     grid-row: 4;
