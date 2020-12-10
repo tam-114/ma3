@@ -149,7 +149,14 @@ p {
   //font-family: $verdana; font choice: verdana
   font-family: $raleway; //google font 'Raleway', sans-serif;
 }
-  
+
+footer {
+  font-size: $pfontsize; //$pfontsize: 20px;
+  text-align: $center; //$center: center
+  color: $colorblack; //color black #0d0d0d
+  font-family: $raleway; //google font 'Raleway', sans-serif;
+  padding: 5px;
+}
 
 h1 {
   font-size: $hOnefontsize; //$hOnefontsize: 35px;
