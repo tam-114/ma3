@@ -144,17 +144,15 @@ body {
 p {
   font-size: $pfontsize; //$pfontsize: 20px;
   text-align: $center; //$center: center
-  //color: $colorwhite; color white #ffffe6
   color: $colorblack; //#0d0d0d; black
-  //font-family: $verdana; font choice: verdana
   font-family: $raleway; //google font 'Raleway', sans-serif;
 }
 
 footer {
-  font-size: $pfontsize; //$pfontsize: 20px;
+  font-size: $pfontsize; //$pfontsize: 20px
   text-align: $center; //$center: center
   color: $colorblack; //color black #0d0d0d
-  font-family: $raleway; //google font 'Raleway', sans-serif;
+  font-family: $raleway; //google font 'Raleway', sans-serif
   padding: 10px;
 }
 
